@@ -1,34 +1,34 @@
 import { MoreProducts } from "@/app/product";
+import Image from "next/image";
 
 const ProductList = () => {
   return (
     <div className="container mx-auto px-4 py-8">
-      <h2 className="text-5xl font-bold font-integral mb-7 flex justify-center items-center uppercase animate-bounce h-[58px] leading-[57.6px]">
-        Top Selling
+      <h2 className="text-5xl font-bold font-integral mb-7 flex justify-center items-center uppercase h-[58px] leading-[57.6px] animate-bounce">
+        New Arrivals
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ">
-        {MoreProducts.map((product: any) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {MoreProducts.map((product) => (
           <div key={product.id} className="overflow-hidden">
-            <img
-              src={product.image}
-              alt={product.name}
-              className="w-full h-48 object-cover shadow-lg transition-transform duration-500 hover:rotate-6"
-            />
+            <div className="relative w-full h-48">
+              <Image
+                src={product.image}
+                alt={product.name}
+                layout="fill"
+                objectFit="cover"
+                className="transition-transform duration-500 hover:rotate-6"
+              />
+            </div>
             <div className="p-6">
-              <h3 className="text-lg font-semibold font-satoshi">
-                {product.name}
-              </h3>
-              <p className="text-yellow-500 font-satoshi">
-                Rating: {product.rating} ★★★★
-              </p>
+              <h3 className="text-lg font-semibold">{product.name}</h3>
+              <p className="text-yellow-500">Rating: {product.rating} ★</p>
+
               {product.discount && (
                 <p className="text-gray-500 line-through">
                   Original Price: ${product.originalPrice}
                 </p>
               )}
-              <p className="text-gray-600 font-satoshi">
-                Price: ${product.price}
-              </p>
+              <p className="text-gray-600">Price: ${product.price}</p>
             </div>
           </div>
         ))}
