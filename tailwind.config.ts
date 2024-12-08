@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         satoshi: ["Satoshi", "sans-serif"],
-        integral: ['"Integral CF"', 'sans-serif'],
+        integral: ['"Integral CF"', "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
