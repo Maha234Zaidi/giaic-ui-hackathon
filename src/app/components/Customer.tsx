@@ -18,9 +18,9 @@ const Testimonials = () => {
           </div>
           <h3 className="font-bold text-lg mb-2 font-satoshi">Sarah M.</h3>
           <p className="text-gray-600 font-satoshi">
-            "I'm blown away by the quality and style of the clothes I received
-            from Shop.co. From casual wear to elegant dresses, every piece I've
-            bought has exceeded my expectations."
+            &quot;I'm blown away by the quality and style of the clothes I
+            received from Shop.co. From casual wear to elegant dresses, every
+            piece I've bought has exceeded my expectations.&quot;
           </p>
         </div>
 
@@ -32,9 +32,9 @@ const Testimonials = () => {
           </div>
           <h3 className="font-bold text-lg mb-2 font-satoshi">Alex K.</h3>
           <p className="text-gray-600 font-satoshi">
-            "Finding clothes that align with my personal style used to be a
-            challenge until I discovered Shop.co. The range of options they
-            offer is truly remarkable, catering to various tastes."
+            &quot; Finding clothes that align with my personal style used to be
+            a challenge until I discovered Shop.co. The range of options they
+            offer is truly remarkable, catering to various tastes.&quot;
           </p>
         </div>
 
@@ -46,9 +46,9 @@ const Testimonials = () => {
           </div>
           <h3 className="font-bold text-lg mb-2 font-satoshi">James L.</h3>
           <p className="text-gray-600 font-satoshi">
-            "As someone who's always on the lookout for unique fashion pieces,
-            I'm thrilled to have stumbled upon Shop.co. Their collection is
-            diverse and trendy!"
+            &quot;As someone who's always on the lookout for unique fashion
+            pieces, I'm thrilled to have stumbled upon Shop.co. Their collection
+            is diverse and trendy!&quot;
           </p>
         </div>
       </div>
